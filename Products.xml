@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="urn:sap-com:document:sap:idoc:soap:messages" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="urn:sap-com:document:sap:idoc:soap:messages" xmlns:intf="urn:sap-com:document:sap:idoc:soap:messages" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:idoc:soap:messages" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="EDI_DC40">
+    <sequence>
+     <element name="TABNAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MANDT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DOCNUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DOCREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STATUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DIRECT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OUTMOD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EXPRSS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TEST" type="xsd:string"/>
+     <element name="IDOCTYP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CIMTYP" type="xsd:string"/>
+     <element name="MESTYP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MESCOD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MESFCT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDVRS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDMES" type="xsd:string"/>
+     <element name="SNDPOR" type="xsd:string"/>
+     <element name="SNDPRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SNDPFC" type="xsd:string"/>
+     <element name="SNDPRN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SNDSAD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SNDLAD" type="xsd:string"/>
+     <element name="RCVPOR" type="xsd:string"/>
+     <element name="RCVPRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RCVPFC" type="xsd:string"/>
+     <element name="RCVPRN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RCVSAD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RCVLAD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CREDAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CRETIM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="REFINT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="REFGRP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="REFMES" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ARCKEY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SERIAL" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MARA1.007">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MATNR_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATNR_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATNR_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BMATN_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BMATN_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BMATN_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STOFF_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STOFF_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STOFF_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HUTYP_DFLT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PILFERABLE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WHSTC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WHMATGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HNDLCODE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HAZMAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HUTYP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TARE_VAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXC_TOL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXDIM_UOM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HERKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MFRGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QQTIME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QQTIMEUOM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QGRP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SERIAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PS_SMARTFORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CWQPROC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CWQTOLGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ADPROF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="IPMIPPRODUCT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEDIUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COMMODITY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_CSGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_COVSA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_REL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STOFF_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BMATN_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SATNR_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GENNR_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RMATP_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_MATURITY_DUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SHLF_LFE_REQ_MAX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_PUOM" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MAKTM.001">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SPRAS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAKTX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SPRAS_ISO" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MARC1.004">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="NFMAT_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NFMAT_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NFMAT_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDPD_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDPD_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDPD_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBMT_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBMT_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBMT_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NFMAT_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDPD_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBMT_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UCMAT_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_GRPRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_GIPRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SCOST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_RELDT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_RRP_TYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_HEUR_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_PACKAGE_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SSPEN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_GET_ALERTS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_RES_NET_NAME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_CONHAP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_HUNIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_CONHAP_OUT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_HUNIT_OUT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SHELF_LIFE_LOC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SHELF_LIFE_DUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_MATURITY_DUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SHLF_LFE_REQ_MIN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_SHLF_LFE_REQ_MAX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_LSUOM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_REORD_DUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_TARGET_DUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_TSTRID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_STRA1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_PEG_PAST_ALERT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_PEG_FUTURE_ALERT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_PEG_STRATEGY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_PEG_WO_ALERT_FST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_FIXPEG_PROD_SET" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_WHATBOM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEF_SEG_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FSH_MG_ARUN_REQ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ARUN_FIX_BATCH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCM_RRP_SEL_GROUP" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MARDM.001">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGORT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PSTAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LSOBS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LMINB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LBSTF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HERKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EXPPG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EXVER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGPBE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRCTL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LWMKB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSKRF" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MFHMM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJTY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZAEHL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJTY_V" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJID_V" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZKBL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STEUF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STEUF_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FGRU1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FGRU2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLANV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KTSCH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KTSCH_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BZOFFB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BZOFFB_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OFFSTB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EHOFFB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OFFSTB_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BZOFFE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BZOFFE_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OFFSTE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EHOFFE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OFFSTE_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MGFORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MGFORM_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EWFORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EWFORM_REF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PAR01" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PAR02" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PAR03" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PAR04" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PAR05" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PAR06" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARU1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARU2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARU3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARU4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARU5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARU6" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARV1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARV2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARV3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARV4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARV5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PARV6" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MPGDM.002">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRGRP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRWRK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UMREF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRGRP_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRGRP_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRGRP_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRGRP_LONG" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MPOPM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERSP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PROPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MODAW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MODAV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZPAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OPGRA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZINI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRMOD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALPHA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BETA1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GAMMA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DELTA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EPSIL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SIGGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRDAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERAN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERIN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERIO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PEREX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ANZPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FIMON" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GWERT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GWER1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GWER2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMGWE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMGW1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMGW2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TWERT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMTWE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRMAD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMMAD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FSUMM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMFSU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GEWGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="THKOF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUSNA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PROAB" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MPRWM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERTAG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRWRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KOPRW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SAIIN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FIXKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EXPRW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ANTEI" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MVEGM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERTAG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VBWRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KOVBW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZEXI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ANTEI" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MVEUM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERTAG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VBWRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KOVBW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZEXI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ANTEI" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MKALM.003">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BDATU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ADATU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STLAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STLAN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLNTY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLNNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BESKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SOBSL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOSGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MDV01" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MDV02" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TEXT1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EWAHR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERTO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SERKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTMI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTMA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RGEKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALORT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLTYG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLNNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALNAG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLTYM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLNNM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALNAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CSPLT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATKO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ELPRO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRVBE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATKO_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATKO_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATKO_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATKO_LONG" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MARCM.008">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WERKS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PSTAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWTTY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAABC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZKRI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EKGRP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUSME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISMM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISPO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLIFZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WEBAZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUSSS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISLS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BESKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SOBSL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MINBE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EISBE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTMI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTMA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTFE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTRF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MABST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOSFX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SBDKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LAGPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALTSL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZAUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUSDT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NFMAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZBED" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MISKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FHORI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PFREI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FFREI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RGEKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FEVOR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BEARZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RUEZT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TRANZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BASMG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DZEIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXLZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LZEIH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZPRO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GPMKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UEETO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UEETK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UNETO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WZEIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ATPKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VZUSL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HERBL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="INSMK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SSQSS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZDKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UMLMC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LADGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="XCHPF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="USEQU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGRAD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUFTL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLVAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OTYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTVFP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERIV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZKFK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRVEZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VBAMG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VBEAZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LIZYK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWSCL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KAUTB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KORDB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STAWN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HERKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HERKR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EXPME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTVER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRCTR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TRAME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MRPPP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SAUFT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FXHOR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRMOD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VINT1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VINT2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STLAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STLAN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLNNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="APLAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOSGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SOBSK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FRTME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGPRO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KAUSF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QZGTP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAKZT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RWPRO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COPAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ABCIN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AWSLS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SERNP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STDPD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SFEPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="XMCNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QSSYS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LFRHY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RDPRF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBMT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBWK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBDT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRBFK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUTRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PREFE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRENC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRENO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PREND" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRENE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRENG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ITARK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRFRQ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZKUP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STRGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGFSB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCHGT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CCFIX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EPRIO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QMATA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLNTY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MMSTA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SFCPF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SHFLG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SHZET" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MDACH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZECH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MMSTD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MFRGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FVIDK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="INDUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MOWNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MOGRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CASNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GPNUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STEUC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FABKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOGGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VSPVB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DPLFS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DPLPU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DPLHO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MINLS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAXLS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FIXLS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LTINC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COMPL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CONVT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FPRFM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SHPRO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FXPRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZPSP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OCMPF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="APOKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AHDIS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EISLO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NCOST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEGRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROTATION_DATE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UCHKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UCMAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="IUID_RELEVANT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="IUID_TYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UID_IEA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_COVS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_STATC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_PRCM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_CHINT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_STK_PRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_DEFSC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPSKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_PLANNING_TYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_HEUR_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_FIXPEG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_PEG_STRATEGY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_GIPRT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_CONHAP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_HUNIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_CONHAP_OUT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_HUNIT_OUT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_ATPCHECK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPS_STRATEGY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="E1MARC1" nillable="true" type="impl:E1MARC1.004"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MARDM" nillable="true" type="impl:E1MARDM.001"/>
+     <element maxOccurs="1" minOccurs="0" name="E1MFHMM" nillable="true" type="impl:E1MFHMM.000"/>
+     <element maxOccurs="1" minOccurs="0" name="E1MPGDM" nillable="true" type="impl:E1MPGDM.002"/>
+     <element maxOccurs="1" minOccurs="0" name="E1MPOPM" nillable="true" type="impl:E1MPOPM.000"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MPRWM" nillable="true" type="impl:E1MPRWM.000"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MVEGM" nillable="true" type="impl:E1MVEGM.000"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MVEUM" nillable="true" type="impl:E1MVEUM.000"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MKALM" nillable="true" type="impl:E1MKALM.003"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MEANM.001">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEINH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LFNUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EAN11" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EANTP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HPEAN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_CATV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SGT_CATV_LONG" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MARMM.004">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEINH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UMREZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UMREN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EAN11" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NUMTP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LAENG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BREIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HOEHE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEABM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOLUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOLEH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BRGEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GEWEI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MESUB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GTIN_VARIANT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="_-CWM_-TY2TQ" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NEST_FTR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAX_STACK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CAPAUSE" type="xsd:string"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MEANM" nillable="true" type="impl:E1MEANM.001"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MBEWM.002">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWKEY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWTAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VPRSV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STPRS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PEINH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BKLAS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMVPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMVER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMSTP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMPEI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMBKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJVPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJVER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJSTP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LFGJA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LFMON" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWTTY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZKPRS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZKDAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWPRS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWPRH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJBWS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJBWH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VVJLB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VVMLB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VVSAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLP1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLP2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLP3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLD1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLD2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZPLD3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KALKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KALKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="XLIFO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MYPOL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWPH1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWPS1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ABWKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PSTAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KALN1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KALNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWVA1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWVA2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWVA3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERS1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERS2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERS3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HRKFT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KOSGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPRDZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPRDL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PPRDV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PDATZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PDATL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PDATV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EKALR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VPLPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MLMAA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MLAST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJBKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VJPEI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HKMAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EKLAS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QKLAS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTUSE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTORG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OWNPR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWPEI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CON_FIN_VALLEVEL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CON_FIN_VALPROC" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MLGTM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGTYP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGPLA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LPMAX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LPMIN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAMNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NSMNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KOBER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RDMNG" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MLGNM.001">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGNUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LGBKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LTKZE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LTKZA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LHMG1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LHMG2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LHMG3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LHME1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LHME2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LHME3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LETY1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LETY2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LETY3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVSME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZZUL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BLOCK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZMBF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSSKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MKAPV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BEZME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PLKPT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOMEM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="L2SKR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MLGTM" nillable="true" type="impl:E1MLGTM.000"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MVKEM.003">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VKORG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VTWEG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VERSG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BONUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PROVG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SKTOF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMSTA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VMSTD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUMNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LFMNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EFMNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCMNG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCHME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VRKME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTPOS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DWERK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRODH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PMATN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KONDM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KTGRM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MVGR1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MVGR2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MVGR3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MVGR4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MVGR5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SSTUF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PFLKS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LSTFL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LSTVZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LSTAK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT6" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT7" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT8" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRAT9" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRATA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VAVME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RDPRF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEGRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PMATN_EXTERNAL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PMATN_VERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PMATN_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PMATN_LONG" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MLANM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ALAND" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY6" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM6" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY7" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM7" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY8" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM8" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TATY9" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXM9" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TAXIM" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MTXLM.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDFORMAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDLINE" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MTXHM.002">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDOBJECT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDNAME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDSPRAS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDTEXTTYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SPRAS_ISO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TDNAME_S4" type="xsd:string"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MTXLM" nillable="true" type="impl:E1MTXLM.000"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1CUINS.002">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="INST_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJ_TYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASS_TYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJ_KEY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJ_TXT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QUANTITY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUTHOR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QUANTITY_UNIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COMPLETE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CONSISTENT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJECT_GUID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERSIST_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PERSIST_ID_TYPE" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1CUVAL.003">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="INST_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CHARC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CHARC_TXT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VALUE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VALUE_TXT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AUTHOR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VALUE_TO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VALCODE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VALUE_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VALUE_TO_LONG" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1CUCOM.002">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="C_PROFILE" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASSTYPE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ORGAREAS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STATUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BOMAPPL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLAVAILCH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BOMEXPL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TASKLEXPL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="INITSCREEN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLASSEMBLY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLRESULT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLMDATA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLCASONLY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLMANCHANG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLHOLDBOM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLDELETE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DESIGN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NEUTR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CHAR_VALU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="A_LAISO" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCOPE_CHAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCOPE_VALU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_EXCLUDE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DISPLAY" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRICING" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CONFIGUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEFVALU_DE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_MARK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DEFVALU_CC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TYPM_SEL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TYPM_STRA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_SC_CHAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_SC_DEP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_SC_KN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_SC_CMPF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MULTIL_STRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_DPSEU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OB_FIX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OB_INST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_EOASL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_SAASL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_OBJ_MAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_OBJ_DOC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_OBJ_CLS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_OBJ_TXT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_SDREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_KOREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_FEREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_INREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_KAREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="POSTYPEN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SORTF1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SORTF2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SORTF3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SORTF4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SORTF5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASSF1" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASSF2" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASSF3" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASSF4" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CLASSF5" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRIO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRSTL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="UMBEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FLBROWSER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FL_PROF_OBOM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PROC_MODE" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1CUCFG.003">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="POSEX" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CONFIG_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ROOT_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SCE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KBNAME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KBVERSION" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COMPLETE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CONSISTENT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CFGINFO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KBPROFILE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KBLANGUAGE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CBASE_ID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CBASE_ID_TYPE" type="xsd:string"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1CUINS" nillable="true" type="impl:E1CUINS.002"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1CUVAL" nillable="true" type="impl:E1CUVAL.003"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1CUCOM" nillable="true" type="impl:E1CUCOM.002"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1MARAM.008">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="MSGFN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERSDA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERNAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LAEDA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AENAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PSTAT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LVORM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTART" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MBRSH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATKL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BISMT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEINS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BSTME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZEINR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZEIAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZEIVR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ZEIFO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AESZN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BLATT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BLANZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FERTH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FORMT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GROES" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WRKST" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NORMT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LABOR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EKWSL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BRGEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NTGEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GEWEI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOLUM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOLEH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BEHVO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RAUBE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TEMPB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="TRAGR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STOFF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SPART" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KUNNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WESCH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWVOR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BWSCL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SAISO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ETIAR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ETIFO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EAN11" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NUMTP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LAENG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BREIT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="HOEHE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MEABM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRDHA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CADKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERGEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERGEI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERVOL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ERVOE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GEWTO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOLTO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VABME" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZKFG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="XCHPF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VHART" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="FUELG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="STFAK" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MAGRV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BEGRU" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="QMPUR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RBNRM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MHDRZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MHDHB" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MHDLP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VPSTA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="EXTWG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MSTAE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MSTAV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MSTDE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MSTDV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZUMW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KOSCH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NRFHG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MFRPN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MFRNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BMATN" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MPROF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PROFL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="IHIVI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ILOOS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZGVH" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="XGCHP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="COMPL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="KZEFF" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RDMHD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="IPRKZ" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PRZUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MTPOS_MARA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GEWTO_NEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="VOLTO_NEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WRKST_NEW" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="AENNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATFI" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="CMREL" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SATNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SLED_BBD" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GTIN_VARIANT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GENNR" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="SERLV" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RMATP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="GDS_RELEVANT" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MCOND" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="RETDELC" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="LOGLEV_RETO" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="NSNID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="WEORA" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="_-CWM_-TOLGR" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="_-CWM_-TARA" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="_-CWM_-TARUM" nillable="true" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="PACKCODE" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DG_PACK_STATUS" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ANP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MATNR_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="BISMT_LONG" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="E1MARA1" nillable="true" type="impl:E1MARA1.007"/>
+     <element maxOccurs="unbounded" name="E1MAKTM" nillable="true" type="impl:E1MAKTM.001"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MARCM" nillable="true" type="impl:E1MARCM.008"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MARMM" nillable="true" type="impl:E1MARMM.004"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MBEWM" nillable="true" type="impl:E1MBEWM.002"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MLGNM" nillable="true" type="impl:E1MLGNM.001"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MVKEM" nillable="true" type="impl:E1MVKEM.003"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MLANM" nillable="true" type="impl:E1MLANM.000"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1MTXHM" nillable="true" type="impl:E1MTXHM.002"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1CUCFG" nillable="true" type="impl:E1CUCFG.003"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1UPSLINK.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="UPSNAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="ORGNAM" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="MESTYP" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJID" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="OBJVAL" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="E1IDOCENHANCEMENT.000">
+    <sequence>
+     <element maxOccurs="1" minOccurs="0" name="IDENTIFIER" type="xsd:string"/>
+     <element maxOccurs="1" minOccurs="0" name="DATA" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="MATMAS.MATMAS05">
+    <sequence>
+     <element name="EDI_DC40" type="impl:EDI_DC40"/>
+     <element maxOccurs="unbounded" name="E1MARAM" nillable="true" type="impl:E1MARAM.008"/>
+     <element maxOccurs="1" minOccurs="0" name="E1UPSLINK" nillable="true" type="impl:E1UPSLINK.000"/>
+     <element maxOccurs="unbounded" minOccurs="0" name="E1IDOCENHANCEMENT" nillable="true" type="impl:E1IDOCENHANCEMENT.000"/>
+    </sequence>
+   </complexType>
+   <element name="MATMAS05">
+    <complexType>
+     <sequence>
+      <element name="IDOC" type="impl:MATMAS.MATMAS05"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="IdocAssign">
+    <sequence>
+     <element name="TransferId" nillable="true" type="xsd:string"/>
+     <element name="DbId" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <element name="MATMAS05Response">
+    <complexType>
+     <sequence>
+      <element name="IdocAssign" nillable="true" type="impl:IdocAssign"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="MATMAS.MATMAS05Response">
+
+      <wsdl:part element="impl:MATMAS05Response" name="MATMAS05Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="MATMAS.MATMAS05Request">
+
+      <wsdl:part element="impl:MATMAS05" name="MATMAS05">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="MATMAS.MATMAS05.PortType">
+
+      <wsdl:operation name="MATMAS.MATMAS05" parameterOrder="MATMAS05">
+
+         <wsdl:input message="impl:MATMAS.MATMAS05Request" name="MATMAS.MATMAS05Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:MATMAS.MATMAS05Response" name="MATMAS.MATMAS05Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ProductsSoapBinding" type="impl:MATMAS.MATMAS05.PortType">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="MATMAS.MATMAS05">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="MATMAS.MATMAS05Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="MATMAS.MATMAS05Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ProductsService">
+
+      <wsdl:port binding="impl:ProductsSoapBinding" name="Products">
+
+         <wsdlsoap:address location="http://13.126.36.206/FinalSAPService/services/Products"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
